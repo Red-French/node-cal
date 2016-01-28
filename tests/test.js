@@ -58,9 +58,15 @@ describe('cal', () => {
       });
     });
   });
-  describe('.grabDate', () => {
-    it('grabs the date, dude', () => {
-      expect(reds.grabDate()).to.equal(1);
-    });
+  describe("MONTH TEST", () => {
+    describe('.grabDate', () => {
+      it('grabs the date, dude', () => {
+        expect(reds.grabDate()).to.equal(28);
+      });
+    });    
   });
+  
 });
+
+
+
