@@ -1,7 +1,8 @@
 'use strict';
 
 const zellers = require('../lib/zellers');
-const reds = require('../lib/month');
+const getDate = require('../lib/month');
+const cal = require('../lib/cal');
 
 const { expect } = require('chai');
 const { execSync } = require('child_process');
@@ -61,7 +62,9 @@ describe('cal', () => {
   describe("MONTH TEST", () => {
     describe('.grabDate', () => {
       it('grabs the date, dude', () => {
-        expect(reds.grabDate()).to.equal(28);
+        expect(getDate.grabDate().today).to.equal(28);  // checks current date from month.js
+        expect(getDate.grabDate().currentMonth).to.equal(1);  // checks current month from month.js
+        expect(getDate.grabDate().currentYear).to.equal(2016); // checks current year from month.js
       });
     });    
   });
