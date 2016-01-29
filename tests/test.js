@@ -74,6 +74,7 @@ describe('cal', () => {
     describe('.buildCal', () => {
       it('build the calendar, my man', () => {
         expect(cal.buildCal().thisMonth).to.equal(1); // checks current month from cal.js
+        expect(cal.buildCal().thisDay).to.equal(29); // checks current day from cal.js
       });
     });    
   });
