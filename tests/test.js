@@ -59,17 +59,26 @@ describe('cal', () => {
       });
     });
   });
-  describe("MONTH TEST", () => {
+
+  describe("TEST MONTH.JS", () => {
     describe('.grabDate', () => {
       it('grabs the date, dude', () => {
         expect(getDate.grabDate().today).to.equal(29);  // checks current date from month.js
         expect(getDate.grabDate().currentMonth).to.equal(1);  // checks current month from month.js
         expect(getDate.grabDate().currentYear).to.equal(2016); // checks current year from month.js
-        // expect(monthA
       });
     });    
   });
   
+  describe("TEST CAL.JS", () => {
+    describe('.buildCal', () => {
+      it('build the calendar, my man', () => {
+        expect(cal.buildCal().thisMonth).to.equal(1); // checks current month from cal.js
+      });
+    });    
+  });
+
+
 });
 
 
