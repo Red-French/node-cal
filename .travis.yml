@@ -1,0 +1,6 @@
+language: node_js  # 'language is the key -- node_js is the value'
+node_js:
+  - node
+  - 5
+  - 4.2
+  - 0.12
