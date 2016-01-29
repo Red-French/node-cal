@@ -4,8 +4,8 @@ const zellers = require('../lib/zellers');
 const getDate = require('../lib/month');
 const cal = require('../lib/cal');
 
-const { expect } = require('chai');
-const { execSync } = require('child_process');
+const { expect } = require('chai');  // es6 syntax
+const { execSync } = require('child_process');  // es6 syntax
 
 describe('cal', () => {
   describe('CLI', () => {
@@ -65,6 +65,7 @@ describe('cal', () => {
         expect(getDate.grabDate().today).to.equal(28);  // checks current date from month.js
         expect(getDate.grabDate().currentMonth).to.equal(1);  // checks current month from month.js
         expect(getDate.grabDate().currentYear).to.equal(2016); // checks current year from month.js
+        // expect(monthA
       });
     });    
   });
