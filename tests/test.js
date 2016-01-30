@@ -75,12 +75,10 @@ describe('cal', () => {
       it('build the calendar, my man', () => {
         expect(cal.buildCal().thisMonth).to.equal(1); // checks current month from cal.js
         expect(cal.buildCal().thisDay).to.equal(29); // checks current day from cal.js
+        expect(cal.buildCal().thisYear).to.equal(2016)  // checks current year from cal.js
       });
     });    
   });
 
 
 });
-
-
-
