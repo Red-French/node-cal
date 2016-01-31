@@ -66,12 +66,12 @@ describe('cal', () => {
         // expect(getDate.grabDate().today).to.equal(29);  // checks current date from month.js
         // expect(getDate.grabDate().currentMonth).to.equal(1);  // checks current month from month.js
         // expect(getDate.grabDate().currentYear).to.equal(2016); // checks current year from month.js
-        expect(getDate.displayHeader(1, 2016)).to.equal('    January 2016\nSu Mo Tu We Th Fr Sa\n');
-        expect(getDate.displayHeader(5, 2016)).to.equal('      May 2016\nSu Mo Tu We Th Fr Sa\n');
-        expect(getDate.displayHeader(8, 2016)).to.equal('    August 2016\nSu Mo Tu We Th Fr Sa\n');
-        expect(getDate.displayHeader(6, 2016)).to.equal('     June 2016\nSu Mo Tu We Th Fr Sa\n');
-        expect(getDate.displayHeader(9, 2016)).to.equal('   September 2016\nSu Mo Tu We Th Fr Sa\n');
-        expect(getDate.displayHeader(9, 700)).to.equal('   September 700\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(1, 2016)).to.equal('    January 2016\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(5, 2016)).to.equal('      May 2016\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(8, 2016)).to.equal('    August 2016\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(6, 2016)).to.equal('     June 2016\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(9, 2016)).to.equal('   September 2016\nSu Mo Tu We Th Fr Sa\n');
+        expect(getDate.calBuilder(9, 700)).to.equal('   September 700\nSu Mo Tu We Th Fr Sa\n');
       });
     });
   });
