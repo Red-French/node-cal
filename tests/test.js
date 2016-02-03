@@ -2,7 +2,7 @@
 
 const zellers = require('../lib/zellers');
 const getDate = require('../lib/month');
-const cal = require('../lib/cal');
+const cal = require('../lib/cli');
 
 const { expect } = require('chai');  // es6 syntax
 const { execSync } = require('child_process');  // es6 syntax
